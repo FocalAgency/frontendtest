@@ -12,7 +12,6 @@
 - The header should be sticky.
 - The header, banner image & footer should be full bleed.
 - Other content should have a max column width of 1500px.
-- Links don't need to go anywhere. You can provide example markup.
 - The map overlay should be triggered when clicking on the `View map` button.
 
 ## Assets
