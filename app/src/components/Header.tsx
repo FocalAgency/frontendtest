@@ -1,8 +1,20 @@
+import { useEffect, useState } from "react";
 import logo from "../assets/icons/izza.svg";
 import { Phone } from "lucide-react";
-const header = () => {
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 16);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 -mb-20 h-20 bg-transparent text-white">
+    <header
+      className={`sticky top-0 z-50 -mb-20 h-20 text-white ${isScrolled ? "bg-black/95" : "bg-transparent"}`}
+    >
       <div className="mx-auto flex h-full max-w-375 items-center justify-between gap-2 px-4 sm:gap-6 sm:px-6">
         <img
           src={logo}
@@ -23,4 +35,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
