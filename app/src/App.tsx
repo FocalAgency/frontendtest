@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
+import Location from "./sections/Location";
 import Menu from "./sections/Menu";
+import Offer from "./sections/Offer";
 import Story from "./sections/Story";
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
       <Header />
       <Hero />
       <Menu />
-      <Story/>
+      <Story />
+      <Offer />
+      <Location />
     </>
   );
 }
