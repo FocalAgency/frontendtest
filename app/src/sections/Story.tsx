@@ -18,19 +18,19 @@ const Story = () => {
               <div className="flex flex-col items-start gap-4">
                 <button
                   type="button"
-                  className="inline-flex min-h-11 min-w-36 items-center border border-black px-5 py-2 font-bold"
+                  className="inline-flex min-h-11 min-w-36 items-center border-2 border-black px-5 py-2 font-bold"
                 >
                   Twitter
                 </button>
                 <button
                   type="button"
-                  className="inline-flex min-h-11 min-w-36 items-center border border-black px-5 py-2 font-bold"
+                  className="inline-flex min-h-11 min-w-36 items-center border-2 border-black px-5 py-2 font-bold"
                 >
                   Instagram
                 </button>
                 <button
                   type="button"
-                  className="inline-flex min-h-11 min-w-36 items-center border border-black px-5 py-2 font-bold"
+                  className="inline-flex min-h-11 min-w-36 items-center border-2 border-black px-5 py-2 font-bold"
                 >
                   Facebook
                 </button>

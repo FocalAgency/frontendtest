@@ -10,25 +10,25 @@ export const Menu = () => {
           <div className="flex flex-wrap justify-center gap-4 mt-4">
             <button
               type="button"
-              className="min-h-11 border border-black px-5 py-2 font-bold"
+              className="min-h-11 border-2 border-black px-5 py-2 font-bold"
             >
               Pizza
             </button>
             <button
               type="button"
-              className="min-h-11 border border-black px-5 py-2 font-bold"
+              className="min-h-11 border-2 border-black px-5 py-2 font-bold"
             >
               Calzone
             </button>
             <button
               type="button"
-              className="min-h-11 border border-black px-5 py-2 font-bold"
+              className="min-h-11 border-2 border-black px-5 py-2 font-bold"
             >
               Desert
             </button>
             <button
               type="button"
-              className="min-h-11 border border-black px-5 py-2 font-bold"
+              className="min-h-11 border-2 border-black px-5 py-2 font-bold"
             >
               Drinks
             </button>
@@ -46,8 +46,8 @@ export const Menu = () => {
               <div className="p-6">
                 <h3 className="mb-4 text-2xl font-bold">Pizza</h3>
                 <p className="leading-relaxed text-slate-700">
-                  Tomato sauce, mozzarella, hot dog, caramelised onions,
-                  red onions and french's mustard drizzle.
+                  Tomato sauce, mozzarella, hot dog, caramelised onions, red
+                  onions and french's mustard drizzle.
                 </p>
               </div>
             </article>
@@ -66,7 +66,10 @@ export const Menu = () => {
                   Mozzarella, BBQ jackfruit, peppers, red onions, sweetcorn and
                   a BBQ drizzle.
                 </p>
-                <button type="button" className="mt-6 border border-black py-2 px-4 font-bold">
+                <button
+                  type="button"
+                  className="mt-6 border-2 border-black py-2 px-4 font-bold"
+                >
                   Full article
                 </button>
               </div>

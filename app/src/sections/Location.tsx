@@ -1,6 +1,9 @@
-import story from "../assets/images/asignpostimage.jpg";
+import { useRef } from "react";
+import locationimage from "../assets/images/asignpostimage.jpg";
+import MapModal from "../components/MapModal";
 
 const Location = () => {
+  const dialogRef = useRef<HTMLDialogElement>(null);
   return (
     <div>
       <section id="findus" className="bg-white py-16 md:py-24">
@@ -18,7 +21,8 @@ const Location = () => {
               <div className="flex flex-col items-start gap-4">
                 <button
                   type="button"
-                  className="inline-flex min-h-11 min-w-36 items-center border border-black px-5 py-2 font-bold"
+                  onClick={() => dialogRef.current?.showModal()}
+                  className="min-h-11 border-2 border-black px-5 py-2 font-bold"
                 >
                   View Map
                 </button>
@@ -26,14 +30,16 @@ const Location = () => {
             </div>
             <div>
               <img
-                src={story}
-                alt="Our Story"
+                src={locationimage}
+                alt="Chef"
+                loading="lazy"
                 className="block h-auto w-full"
               />
             </div>
           </div>
         </div>
       </section>
+      <MapModal dialogRef={dialogRef} />
     </div>
   );
 };
