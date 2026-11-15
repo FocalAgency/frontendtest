@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import Menu from "./sections/Menu";
+import Story from "./sections/Story";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <Menu />
+      <Story/>
     </>
   );
 }
